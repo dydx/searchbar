@@ -1,18 +1,18 @@
 import React, { Component } from "react";
+import Button from '@material-ui/core/Button';
 
-class MySuperCoolComponent extends Component {
+class SearchBarComponent extends Component {
   handleClick = () => {
-    console.log("Click!");
   };
 
   render() {
     const { color, children } = this.props;
     return (
-      <button onClick={this.handleClick} style={{ color }}>
-        {children}
-      </button>
+      <Button variant="raised" color="primary">
+      Hello World
+      </Button>
     );
   }
 }
 
-export default MySuperCoolComponent;
+export default SearchBarComponent;
